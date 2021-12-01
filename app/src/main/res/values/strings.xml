@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CakeApp</string>
+    <string name="home_title">The perfect sweets\nfor any celebration</string>
+    <string name="error_message">Data cannot be loaded, please try again later</string>
+</resources>
