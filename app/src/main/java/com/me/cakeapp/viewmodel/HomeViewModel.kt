@@ -8,7 +8,6 @@ import com.me.cakeapp.api.CakesAPI
 import com.me.cakeapp.data.mapper.CakeMapper
 import com.me.cakeapp.model.Cake
 import dagger.hilt.android.lifecycle.HiltViewModel
-import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
@@ -24,7 +23,7 @@ class HomeViewModel @Inject constructor() : ViewModel() {
     fun getCakesLD() = cakesLD
     fun getErrorLD() = errorLD
 
-    fun getCakes() = viewModelScope.launch(Dispatchers.IO) {
+    fun getCakes() = viewModelScope.launch {
         try {
             cakesLD.postValue(
                 mapper.toCakesList(
