@@ -3,24 +3,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/FirstFragment">
+    app:startDestination="@id/CakesFragment">
 
     <fragment
-        android:id="@+id/FirstFragment"
-        android:name="com.me.cakeapp.view.ui.HomeFragment"
-        tools:layout="@layout/fragment_cakes">
+        android:id="@+id/CakesFragment"
+        android:name="com.me.cakeapp.view.ui.CakesFragment"
+        tools:layout="@layout/fragment_cakes" />
 
-        <action
-            android:id="@+id/action_FirstFragment_to_SecondFragment"
-            app:destination="@id/SecondFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/SecondFragment"
-        android:name="com.me.cakeapp.view.ui.CakeDetailsFragment"
-        tools:layout="@layout/fragment_details">
-
-        <action
-            android:id="@+id/action_SecondFragment_to_FirstFragment"
-            app:destination="@id/FirstFragment" />
-    </fragment>
 </navigation>

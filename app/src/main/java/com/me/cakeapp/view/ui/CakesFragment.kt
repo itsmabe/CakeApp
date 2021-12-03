@@ -17,7 +17,7 @@ import kotlinx.android.synthetic.main.fragment_cakes.*
 const val KEY_CAKE_OBJECT = "key_cake_object"
 
 @AndroidEntryPoint
-class HomeFragment : Fragment() {
+class CakesFragment : Fragment() {
 
     private val viewModel by viewModels<HomeViewModel>()
     private var adapter: CakeAdapter? = null
